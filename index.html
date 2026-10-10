@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata diri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+       *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+  body{
+    min-height:100vh;
+    display:flex;justify-content:center;align-items:center;
+    background: radial-gradient(circle at 30% 20%, #7c3aed, #0f172a 50%, #000);
+    padding:20px;
+  }
+  .card{
+    width:100%;max-width:380px;
+    background: rgba(255, 71, 4, 0.08);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius:24px;
+    padding:28px;
+    color:white;
+    box-shadow: 0 20px 60px oklab(0% 0 0 / 0.5);
+    text-align:center;
+    animation: muncul 1s ease;
+  }
+  @keyframes muncul{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+  .foto{
+    width:110px;height:110px;
+    margin:0 auto 15px;
+    border-radius:50%;
+    padding:4px;
+    background: linear-gradient(45deg,#a855f7,#ec4899,#06b6d4);
+  }
+  .foto img{
+    width:100%;height:100%;object-fit:cover;
+    border-radius:50%;
+    border:3px solid #0f172a;
+  }
+  
+  h1{font-size:22px;font-weight:700}
+  .role{
+    font-size:13px;letter-spacing:2px;
+    color:#a5b4fc;
+    margin:4px 0 18px;
+    text-transform:uppercase;
+  }
+  .bio{font-size:13px;opacity:0.7;line-height:1.6;margin-bottom:20px}
+  .info{
+    background: rgba(255,255,255,0.06);
+    border-radius:16px;
+    padding:14px;
+    text-align:left;
+    margin-bottom:20px;
+  }
+  .info div{
+    display:flex;justify-content:space-between;
+    font-size:13px;padding:6px 0;
+    border-bottom:1px solid rgba(255,255,255,0.07);
+  }
+  .info div:last-child{border:none}
+  .info span:last-child{opacity:0.8;font-weight:500}
+  .btns{display:flex;gap:10px}
+  .btn{
+    flex:1;padding:12px;
+    border-radius:12px;
+    text-decoration:none;
+    font-size:13px;font-weight:600;
+    text-align:center;
+    transition:0.3s;
+  }
+  .btn-utama{
+    background:white;color:black;
+  }
+  .btn-utama:hover{transform:scale(1.05);box-shadow:0 10px 20px rgba(255,255,255,0.2)}
+  .btn-kedua{
+    background:transparent;color:white;
+    border:1px solid rgba(255,255,255,0.2);
+  }
+  .btn-kedua:hover{background:rgba(255,255,255,0.1)}
+    </style> 
+</head>
+<body>
+
+    <div class="card">
+      <div class="foto">
+        <image src="coding.jpeg.jpeg" alt="800"?>
+      </div>
+      <h1> ACH RAMADHAN NAUFA TAMSAKA</h1>
+      <p class="role">membuat pempograman dan informasi</p>
+      <p class="bio">Belajar membuat pempograman dan dasar dasar komputer</p>
+
+      <div class="info">
+        <div><span>PRODI</span><span>Teknik informatika</span></div>
+        <div><span>lokasi</span><span>proppo,pamekasan</span></div>
+        <div><span>Lahir</span><span>proppo,09-09-2007</span></div>
+        <div><span>Hobi</span><span> membaca dan bermain game</span></div>
+        <div><span>email</span><span>naufaraka123@gmail.com</span></div>
+      </div>
+      <div class="btns">
+        <a href="https://instagram.com/_kai.aj" class="btn btn-utama">follow IG</a>
+        <a href="https://wa.me/628126579618"class="btn btn-kedua">chat WA</a>
+       </div>
+    </div>
+</body>
+</html>
